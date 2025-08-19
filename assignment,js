@@ -1,492 +1,492 @@
-// Q1: Write a program that allow to user enter number then print it.
+// // Q1: Write a program that allow to user enter number then print it.
 
-function printNumber() {
-  var input = window.prompt("Please Enter a number:");
-  if (input === "" || input === null) {
-    window.alert("You didn't type anything.");
-    return;
-  }
-  var num = Number(input);
-  if (num !== num) {
-    window.alert("Please Enter a valid number!");
-  } else {
-    window.alert("Your number is: " + num);
-  }
-}
-printNumber();
+// function printNumber() {
+//   var input = window.prompt("Please Enter a number:");
+//   if (input === "" || input === null) {
+//     window.alert("You didn't type anything.");
+//     return;
+//   }
+//   var num = Number(input);
+//   if (num !== num) {
+//     window.alert("Please Enter a valid number!");
+//   } else {
+//     window.alert("Your number is: " + num);
+//   }
+// }
+// printNumber();
 
-// Q2: Write a program that take number from user then print yes if that number can divide by 3 and 4 otherwise print no.
+// // Q2: Write a program that take number from user then print yes if that number can divide by 3 and 4 otherwise print no.
 
-function divisibleBy() {
-  var input = window.prompt("Please Enter a number:");
-  if (input === "" || input === null) {
-    window.alert("Please enter a number!");
-    return;
-  }
-  var input = Number(input);
-  if (input !== input) {
-    window.alert("Please Enter a valid number!");
-  } else if (input % 3 === 0 && input % 4 === 0) {
-    window.alert("Yes");
-  } else {
-    window.alert("No");
-  }
-}
-divisibleBy();
+// function divisibleBy() {
+//   var input = window.prompt("Please Enter a number:");
+//   if (input === "" || input === null) {
+//     window.alert("Please enter a number!");
+//     return;
+//   }
+//   var input = Number(input);
+//   if (input !== input) {
+//     window.alert("Please Enter a valid number!");
+//   } else if (input % 3 === 0 && input % 4 === 0) {
+//     window.alert("Yes");
+//   } else {
+//     window.alert("No");
+//   }
+// }
+// divisibleBy();
 
-// Q3: Write a program that allows the user to insert 2 integers then print the max
+// // Q3: Write a program that allows the user to insert 2 integers then print the max
 
-function maxOfTwo() {
-  var x = window.prompt("Please Enter a number:");
-  var y = window.prompt("Enter another number:");
-  if (x === "" || y === "" || x === null || y === null) {
-    window.alert("Please Enter a number!");
-    return;
-  }
-  var x = Number(x);
-  var y = Number(y);
-  if (x !== x || y !== y || x % 1 !== 0 || y % 1 !== 0) {
-    window.alert("please Enter a valid number!");
-  } else if (x > y) {
-    window.alert("Max: " + x);
-  } else {
-    window.alert("Max: " + y);
-  }
-}
-maxOfTwo();
+// function maxOfTwo() {
+//   var x = window.prompt("Please Enter a number:");
+//   var y = window.prompt("Enter another number:");
+//   if (x === "" || y === "" || x === null || y === null) {
+//     window.alert("Please Enter a number!");
+//     return;
+//   }
+//   var x = Number(x);
+//   var y = Number(y);
+//   if (x !== x || y !== y || x % 1 !== 0 || y % 1 !== 0) {
+//     window.alert("please Enter a valid number!");
+//   } else if (x > y) {
+//     window.alert("Max: " + x);
+//   } else {
+//     window.alert("Max: " + y);
+//   }
+// }
+// maxOfTwo();
 
-// Q4: Write a program that allows the user to insert an integer then print negative if it is negative number otherwise print positive.
+// // Q4: Write a program that allows the user to insert an integer then print negative if it is negative number otherwise print positive.
 
-function positiveOrNegative() {
-  var x = window.prompt("Please Enter a number:");
-  if (x === "" || x === null) {
-    window.alert("Please enter a number!");
-    return;
-  }
-  var x = Number(x);
-  if (x !== x || x % 1 !== 0) {
-    window.alert("please enter a valid number!");
-  } else if (x >= 0) {
-    window.alert("Positive");
-  } else {
-    window.alert("Negative");
-  }
-}
-positiveOrNegative();
+// function positiveOrNegative() {
+//   var x = window.prompt("Please Enter a number:");
+//   if (x === "" || x === null) {
+//     window.alert("Please enter a number!");
+//     return;
+//   }
+//   var x = Number(x);
+//   if (x !== x || x % 1 !== 0) {
+//     window.alert("please enter a valid number!");
+//   } else if (x >= 0) {
+//     window.alert("Positive");
+//   } else {
+//     window.alert("Negative");
+//   }
+// }
+// positiveOrNegative();
 
-// Q5: Write a program that take 3 integers from user then print the max element and the min element.
+// // Q5: Write a program that take 3 integers from user then print the max element and the min element.
 
-function maxMin() {
-  var x = window.prompt("Please Enter a number:");
-  var y = window.prompt("Please Enter another number!");
-  var z = window.prompt("Please Enter another number!");
-  if (
-    x === "" ||
-    y === "" ||
-    z === "" ||
-    x === null ||
-    y === null ||
-    z === null
-  ) {
-    window.alert("Please enter a number!");
-    return;
-  }
-  var x = Number(x);
-  var y = Number(y);
-  var z = Number(z);
-  if (
-    x !== x ||
-    y !== y ||
-    z !== z ||
-    x % 1 !== 0 ||
-    y % 1 !== 0 ||
-    z % 1 !== 0
-  ) {
-    window.alert("Please Enter a valid number!");
-  } else if (x > y && x > z) {
-    window.alert("Max: " + x);
-  } else if (y > x && y > z) {
-    window.alert("Max: " + y);
-  } else {
-    window.alert("Max: " + z);
-  }
-  if (
-    x !== x ||
-    y !== y ||
-    z !== z ||
-    x % 1 !== 0 ||
-    y % 1 !== 0 ||
-    z % 1 !== 0
-  ) {
-    window.alert("Please Enter a valid number!");
-  } else if (x < y && x < z) {
-    window.alert("Min: " + x);
-  } else if (y < x && y < z) {
-    window.alert("Min: " + y);
-  } else {
-    window.alert("Min: " + z);
-  }
-}
-maxMin();
+// function maxMin() {
+//   var x = window.prompt("Please Enter a number:");
+//   var y = window.prompt("Please Enter another number!");
+//   var z = window.prompt("Please Enter another number!");
+//   if (
+//     x === "" ||
+//     y === "" ||
+//     z === "" ||
+//     x === null ||
+//     y === null ||
+//     z === null
+//   ) {
+//     window.alert("Please enter a number!");
+//     return;
+//   }
+//   var x = Number(x);
+//   var y = Number(y);
+//   var z = Number(z);
+//   if (
+//     x !== x ||
+//     y !== y ||
+//     z !== z ||
+//     x % 1 !== 0 ||
+//     y % 1 !== 0 ||
+//     z % 1 !== 0
+//   ) {
+//     window.alert("Please Enter a valid number!");
+//   } else if (x > y && x > z) {
+//     window.alert("Max: " + x);
+//   } else if (y > x && y > z) {
+//     window.alert("Max: " + y);
+//   } else {
+//     window.alert("Max: " + z);
+//   }
+//   if (
+//     x !== x ||
+//     y !== y ||
+//     z !== z ||
+//     x % 1 !== 0 ||
+//     y % 1 !== 0 ||
+//     z % 1 !== 0
+//   ) {
+//     window.alert("Please Enter a valid number!");
+//   } else if (x < y && x < z) {
+//     window.alert("Min: " + x);
+//   } else if (y < x && y < z) {
+//     window.alert("Min: " + y);
+//   } else {
+//     window.alert("Min: " + z);
+//   }
+// }
+// maxMin();
 
-// Q6: Write a program that allows the user to insert integer number then check If a number is oven or odd.
+// // Q6: Write a program that allows the user to insert integer number then check If a number is oven or odd.
 
-function evenOdd() {
-  var input = window.prompt("Please Enter a number!");
-  if (input === "" || input === null) {
-    window.alert("Please Enter a number!");
-    return;
-  }
-  var input = Number(input);
-  if (input !== input || input % 1 !== 0) {
-    window.alert("Please Enter a valid number!");
-  } else if (input % 2 === 0) {
-    window.alert("even");
-  } else {
-    window.alert("odd");
-  }
-}
-evenOdd();
+// function evenOdd() {
+//   var input = window.prompt("Please Enter a number!");
+//   if (input === "" || input === null) {
+//     window.alert("Please Enter a number!");
+//     return;
+//   }
+//   var input = Number(input);
+//   if (input !== input || input % 1 !== 0) {
+//     window.alert("Please Enter a valid number!");
+//   } else if (input % 2 === 0) {
+//     window.alert("even");
+//   } else {
+//     window.alert("odd");
+//   }
+// }
+// evenOdd();
 
-// Q7: Write a program that take character from user then if it is vowel chars (a,e,I,o,u) then print vowel otherwise print consonant.
+// // Q7: Write a program that take character from user then if it is vowel chars (a,e,I,o,u) then print vowel otherwise print consonant.
 
-function vowelConsonant() {
-  var char = window.prompt("Enter a Character");
-  if (!char || char[1]) {
-    window.alert("Please enter only one character!");
-    return;
-  }
-  if (char === "" || char === null) {
-    window.alert("Please enter a valid character");
-  } else if (
-    char === "a" ||
-    char === "e" ||
-    char === "i" ||
-    char === "o" ||
-    char === "u"
-  ) {
-    window.alert("vowel");
-  } else {
-    window.alert("consonant");
-  }
-}
-vowelConsonant();
+// function vowelConsonant() {
+//   var char = window.prompt("Enter a Character");
+//   if (!char || char[1]) {
+//     window.alert("Please enter only one character!");
+//     return;
+//   }
+//   if (char === "" || char === null) {
+//     window.alert("Please enter a valid character");
+//   } else if (
+//     char === "a" ||
+//     char === "e" ||
+//     char === "i" ||
+//     char === "o" ||
+//     char === "u"
+//   ) {
+//     window.alert("vowel");
+//   } else {
+//     window.alert("consonant");
+//   }
+// }
+// vowelConsonant();
 
-// Q8: Write a program that allows user to insert integer then print all numbers between 1 to that’s number.
+// // Q8: Write a program that allows user to insert integer then print all numbers between 1 to that’s number.
 
-function numberToNumber() {
-  var input = window.prompt("Please Enter a number!");
-  if (input === "" || input === null) {
-    window.alert("Please Enter a number!");
-    return;
-  }
-  var input = Number(input);
-  if (input !== input || input % 1 !== 0) {
-    window.alert("Please Enter a valid number!");
-    return;
-  }
-  for (var i = 1; i <= input; i++) {
-    console.log(i);
-  }
-}
-numberToNumber();
+// function numberToNumber() {
+//   var input = window.prompt("Please Enter a number!");
+//   if (input === "" || input === null) {
+//     window.alert("Please Enter a number!");
+//     return;
+//   }
+//   var input = Number(input);
+//   if (input !== input || input % 1 !== 0) {
+//     window.alert("Please Enter a valid number!");
+//     return;
+//   }
+//   for (var i = 1; i <= input; i++) {
+//     console.log(i);
+//   }
+// }
+// numberToNumber();
 
-// Q9: Write a program that allows user to insert integer then print a multiplication table up to 12.
+// // Q9: Write a program that allows user to insert integer then print a multiplication table up to 12.
 
-function multiplicationTable() {
-  var input = window.prompt("Please Enter a number!");
-  if (input === "" || input === null) {
-    window.alert("Please Enter a number!");
-    return;
-  }
-  var input = Number(input);
-  if (input !== input || input % 1 !== 0) {
-    window.alert("Please Enter a valid number!");
-    return;
-  }
-  for (var i = 1; i <= 12; i++) {
-    console.log(input * i);
-  }
-}
-multiplicationTable();
+// function multiplicationTable() {
+//   var input = window.prompt("Please Enter a number!");
+//   if (input === "" || input === null) {
+//     window.alert("Please Enter a number!");
+//     return;
+//   }
+//   var input = Number(input);
+//   if (input !== input || input % 1 !== 0) {
+//     window.alert("Please Enter a valid number!");
+//     return;
+//   }
+//   for (var i = 1; i <= 12; i++) {
+//     console.log(input * i);
+//   }
+// }
+// multiplicationTable();
 
-// Q10: Write a program that allows to user to insert number then print all even numbers between 1 to this number.
+// // Q10: Write a program that allows to user to insert number then print all even numbers between 1 to this number.
 
-function evenNumbers() {
-  var input = window.prompt("Enter a number");
-  if (input === "" || input === null) {
-    window.alert("Please enter a number");
-    return;
-  }
-  var input = Number(input);
-  if (input !== input) {
-    window.alert("please Enter a valid number!");
-    return;
-  }
-  for (var i = 1; i <= input; i++) {
-    if (!(i % 2)) {
-      console.log(i);
-    }
-  }
-}
-evenNumbers();
+// function evenNumbers() {
+//   var input = window.prompt("Enter a number");
+//   if (input === "" || input === null) {
+//     window.alert("Please enter a number");
+//     return;
+//   }
+//   var input = Number(input);
+//   if (input !== input) {
+//     window.alert("please Enter a valid number!");
+//     return;
+//   }
+//   for (var i = 1; i <= input; i++) {
+//     if (!(i % 2)) {
+//       console.log(i);
+//     }
+//   }
+// }
+// evenNumbers();
 
-// Q11: Write a program that take two integers then print the power.
+// // Q11: Write a program that take two integers then print the power.
 
-function powerOfTwo() {
-  var x = window.prompt("Please Enter a number:");
-  var y = window.prompt("Please Enter another number:");
-  if (x === "" || y === "" || x === null || y === null) {
-    window.alert("Please Enter a number!");
-    return;
-  }
-  var x = Number(x);
-  var y = Number(y);
-  if (x !== x || y !== y || x % 1 !== 0 || y % 1 !== 0) {
-    window.alert("Please Enter a valid number!");
-  } else {
-    window.alert(x ** y);
-  }
-}
-powerOfTwo();
+// function powerOfTwo() {
+//   var x = window.prompt("Please Enter a number:");
+//   var y = window.prompt("Please Enter another number:");
+//   if (x === "" || y === "" || x === null || y === null) {
+//     window.alert("Please Enter a number!");
+//     return;
+//   }
+//   var x = Number(x);
+//   var y = Number(y);
+//   if (x !== x || y !== y || x % 1 !== 0 || y % 1 !== 0) {
+//     window.alert("Please Enter a valid number!");
+//   } else {
+//     window.alert(x ** y);
+//   }
+// }
+// powerOfTwo();
 
-// Q12: Write a program to enter marks of five subjects and calculate total, average and percentage.
+// // Q12: Write a program to enter marks of five subjects and calculate total, average and percentage.
 
-function calculateMarks() {
-  var totalMarks = 0;
-  var subjectCount = 5;
-  var maxMarksPerSubject = 100;
-  for (var i = 1; i <= subjectCount; i++) {
-    var input = window.prompt(`Enter marks for subject ${i} :`);
-    var marks = Number(input);
-    if (
-      input === null ||
-      input === "" ||
-      marks !== marks ||
-      marks < 0 ||
-      marks > maxMarksPerSubject
-    ) {
-      window.alert("Please enter marks between 0 and " + maxMarksPerSubject);
-      return;
-    }
-    totalMarks = totalMarks + marks;
-  }
-  var average = totalMarks / subjectCount;
-  var percentage = (totalMarks / (subjectCount * maxMarksPerSubject)) * 100;
-  window.alert("Total Marks= " + totalMarks);
-  window.alert("Average Marks= " + average);
-  window.alert("Percentage= " + percentage + "%");
-}
-calculateMarks();
+// function calculateMarks() {
+//   var totalMarks = 0;
+//   var subjectCount = 5;
+//   var maxMarksPerSubject = 100;
+//   for (var i = 1; i <= subjectCount; i++) {
+//     var input = window.prompt(`Enter marks for subject ${i} :`);
+//     var marks = Number(input);
+//     if (
+//       input === null ||
+//       input === "" ||
+//       marks !== marks ||
+//       marks < 0 ||
+//       marks > maxMarksPerSubject
+//     ) {
+//       window.alert("Please enter marks between 0 and " + maxMarksPerSubject);
+//       return;
+//     }
+//     totalMarks = totalMarks + marks;
+//   }
+//   var average = totalMarks / subjectCount;
+//   var percentage = (totalMarks / (subjectCount * maxMarksPerSubject)) * 100;
+//   window.alert("Total Marks= " + totalMarks);
+//   window.alert("Average Marks= " + average);
+//   window.alert("Percentage= " + percentage + "%");
+// }
+// calculateMarks();
 
-// Q13: Write a program to input month number and print number of days in that month.
+// // Q13: Write a program to input month number and print number of days in that month.
 
-function daysInMonth() {
-  var input = prompt("Enter month (1-12):");
-  var month = Number(input);
-  if (month !== month || month < 1 || month > 12) {
-    window.alert("Please enter a number between 1 and 12.");
-    return;
-  }
-  var days = 0;
-  for (var i = 1; i <= 12; i++) {
-    if (i === month) {
-      if (i === 2) {
-        days = 28;
-      } else if (i === 4 || i === 6 || i === 9 || i === 11) {
-        days = 30;
-      } else {
-        days = 31;
-      }
-    }
-  }
-  window.alert("Days in Month: " + days);
-}
-daysInMonth();
+// function daysInMonth() {
+//   var input = prompt("Enter month (1-12):");
+//   var month = Number(input);
+//   if (month !== month || month < 1 || month > 12) {
+//     window.alert("Please enter a number between 1 and 12.");
+//     return;
+//   }
+//   var days = 0;
+//   for (var i = 1; i <= 12; i++) {
+//     if (i === month) {
+//       if (i === 2) {
+//         days = 28;
+//       } else if (i === 4 || i === 6 || i === 9 || i === 11) {
+//         days = 30;
+//       } else {
+//         days = 31;
+//       }
+//     }
+//   }
+//   window.alert("Days in Month: " + days);
+// }
+// daysInMonth();
 
-// Q14: Write a program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer , Find percentage and grade.
+// // Q14: Write a program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer , Find percentage and grade.
 
-function marksWithGrade() {
-  var totalMarks = 0;
-  var subjects = ["Physics", "Chemistry", "Biology", "Mathematics", "Computer"];
-  var maxMarksPerSubject = 100;
-  for (var i = 0; i <= 4; ++i) {
-    var input = window.prompt(`Enter marks for subject ${subjects[i]} :`);
-    var marks = Number(input);
-    if (
-      input === null ||
-      input === "" ||
-      marks !== marks ||
-      marks < 0 ||
-      marks > maxMarksPerSubject
-    ) {
-      window.alert("Please enter marks between 0 and " + maxMarksPerSubject);
-      return;
-    }
-    totalMarks = totalMarks + marks;
-  }
-  var percentage = (totalMarks / (5 * maxMarksPerSubject)) * 100;
-  var grade;
-  if (percentage >= 90) {
-    grade = "A";
-  } else if (percentage >= 80) {
-    grade = "B";
-  } else if (percentage >= 70) {
-    grade = "C";
-  } else if (percentage >= 60) {
-    grade = "D";
-  } else if (percentage >= 40) {
-    grade = "E";
-  } else {
-    grade = "F";
-  }
-  window.alert(
-    "Percentage= " + percentage + " %" + " and your Grade: " + grade
-  );
-}
-marksWithGrade();
+// function marksWithGrade() {
+//   var totalMarks = 0;
+//   var subjects = ["Physics", "Chemistry", "Biology", "Mathematics", "Computer"];
+//   var maxMarksPerSubject = 100;
+//   for (var i = 0; i <= 4; ++i) {
+//     var input = window.prompt(`Enter marks for subject ${subjects[i]} :`);
+//     var marks = Number(input);
+//     if (
+//       input === null ||
+//       input === "" ||
+//       marks !== marks ||
+//       marks < 0 ||
+//       marks > maxMarksPerSubject
+//     ) {
+//       window.alert("Please enter marks between 0 and " + maxMarksPerSubject);
+//       return;
+//     }
+//     totalMarks = totalMarks + marks;
+//   }
+//   var percentage = (totalMarks / (5 * maxMarksPerSubject)) * 100;
+//   var grade;
+//   if (percentage >= 90) {
+//     grade = "A";
+//   } else if (percentage >= 80) {
+//     grade = "B";
+//   } else if (percentage >= 70) {
+//     grade = "C";
+//   } else if (percentage >= 60) {
+//     grade = "D";
+//   } else if (percentage >= 40) {
+//     grade = "E";
+//   } else {
+//     grade = "F";
+//   }
+//   window.alert(
+//     "Percentage= " + percentage + " %" + " and your Grade: " + grade
+//   );
+// }
+// marksWithGrade();
 
-// Q15: Write a program to print total number of days in month.
+// // Q15: Write a program to print total number of days in month.
 
-function daysInMonthSwitch() {
-  var month = Number(window.prompt("Please enter month number (1-12)"));
-  switch (month) {
-    case 1:
-      window.alert("January has 31 days.");
-      break;
-    case 2:
-      window.alert("February has 28 days.");
-      break;
-    case 3:
-      window.alert("March has 31 days.");
-      break;
-    case 4:
-      window.alert("April has 30 days.");
-      break;
-    case 5:
-      window.alert("May has 31 days.");
-      break;
-    case 6:
-      window.alert("June has 30 days.");
-      break;
-    case 7:
-      window.alert("July has 31 days.");
-      break;
-    case 8:
-      window.alert("August has 31 days.");
-      break;
-    case 9:
-      window.alert("September has 30 days.");
-      break;
-    case 10:
-      window.alert("October has 31 days.");
-      break;
-    case 11:
-      window.alert("November has 30 days.");
-      break;
-    case 12:
-      window.alert("December has 31 days.");
-      break;
-    default:
-      window.alert(
-        "Invalid month number. Please enter a number between 1 and 12."
-      );
-  }
-}
-daysInMonthSwitch();
+// function daysInMonthSwitch() {
+//   var month = Number(window.prompt("Please enter month number (1-12)"));
+//   switch (month) {
+//     case 1:
+//       window.alert("January has 31 days.");
+//       break;
+//     case 2:
+//       window.alert("February has 28 days.");
+//       break;
+//     case 3:
+//       window.alert("March has 31 days.");
+//       break;
+//     case 4:
+//       window.alert("April has 30 days.");
+//       break;
+//     case 5:
+//       window.alert("May has 31 days.");
+//       break;
+//     case 6:
+//       window.alert("June has 30 days.");
+//       break;
+//     case 7:
+//       window.alert("July has 31 days.");
+//       break;
+//     case 8:
+//       window.alert("August has 31 days.");
+//       break;
+//     case 9:
+//       window.alert("September has 30 days.");
+//       break;
+//     case 10:
+//       window.alert("October has 31 days.");
+//       break;
+//     case 11:
+//       window.alert("November has 30 days.");
+//       break;
+//     case 12:
+//       window.alert("December has 31 days.");
+//       break;
+//     default:
+//       window.alert(
+//         "Invalid month number. Please enter a number between 1 and 12."
+//       );
+//   }
+// }
+// daysInMonthSwitch();
 
-// Q16: Write a program to check whether an alphabet is vowel or consonant.
+// // Q16: Write a program to check whether an alphabet is vowel or consonant.
 
-function alphaVowelConsonant() {
-  var char = prompt("Enter a letter:");
-  if (char < "a" || char > "z" || char === null || char === "") {
-    window.alert("Please enter a single letter!");
-    return;
-  }
-  switch (char) {
-    case "a":
-    case "e":
-    case "i":
-    case "o":
-    case "u":
-      window.alert(char + " is a vowel.");
-      break;
-    default:
-      window.alert(char + " is a consonant.");
-  }
-}
-alphaVowelConsonant();
+// function alphaVowelConsonant() {
+//   var char = prompt("Enter a letter:");
+//   if (char < "a" || char > "z" || char === null || char === "") {
+//     window.alert("Please enter a single letter!");
+//     return;
+//   }
+//   switch (char) {
+//     case "a":
+//     case "e":
+//     case "i":
+//     case "o":
+//     case "u":
+//       window.alert(char + " is a vowel.");
+//       break;
+//     default:
+//       window.alert(char + " is a consonant.");
+//   }
+// }
+// alphaVowelConsonant();
 
-// 17- Write a program to find maximum between two numbers
-function maxOfTwoNumbersSwitch() {
-  var x = +window.prompt("Enter the First Number:");
-  var y = +window.prompt("Enter the Second Number:");
-  switch (true) {
-    case x > y:
-      window.alert("MaxNumber= " + x);
-      break;
-    case x === y:
-      window.alert("All Numbers Are Equal");
-      break;
-    default:
-      window.alert("MaxNumber= " + y);
-  }
-}
-maxOfTwoNumbersSwitch();
+// // 17- Write a program to find maximum between two numbers
+// function maxOfTwoNumbersSwitch() {
+//   var x = +window.prompt("Enter the First Number:");
+//   var y = +window.prompt("Enter the Second Number:");
+//   switch (true) {
+//     case x > y:
+//       window.alert("MaxNumber= " + x);
+//       break;
+//     case x === y:
+//       window.alert("All Numbers Are Equal");
+//       break;
+//     default:
+//       window.alert("MaxNumber= " + y);
+//   }
+// }
+// maxOfTwoNumbersSwitch();
 
-// 18- Write a program to check whether a number is even or odd
-function evenOrOddSwitch() {
-  var x = +window.prompt("Please Enter a number:");
-  switch (true) {
-    case x % 2 === 0:
-      window.alert("Even");
-      break;
-    default:
-      window.alert("Odd");
-  }
-}
-evenOrOddSwitch();
+// // 18- Write a program to check whether a number is even or odd
+// function evenOrOddSwitch() {
+//   var x = +window.prompt("Please Enter a number:");
+//   switch (true) {
+//     case x % 2 === 0:
+//       window.alert("Even");
+//       break;
+//     default:
+//       window.alert("Odd");
+//   }
+// }
+// evenOrOddSwitch();
 
-// 19- Write a program to check whether a number is positive or negative or zero
-function checkNumberSign() {
-  var x = +window.prompt("Please Enter a number:");
-  switch (true) {
-    case x > 0:
-      window.alert("Positive");
-      break;
-    case x === 0:
-      window.alert("Zero");
-      break;
-    default:
-      window.alert("negative");
-  }
-}
-checkNumberSign();
+// // 19- Write a program to check whether a number is positive or negative or zero
+// function checkNumberSign() {
+//   var x = +window.prompt("Please Enter a number:");
+//   switch (true) {
+//     case x > 0:
+//       window.alert("Positive");
+//       break;
+//     case x === 0:
+//       window.alert("Zero");
+//       break;
+//     default:
+//       window.alert("negative");
+//   }
+// }
+// checkNumberSign();
 
-// 20- Write a program to create Simple Calculator
-function Calculator() {
-  var x = +window.prompt("Enter the First Number:");
-  var operator = window.prompt("Enter operator (+, -, *, /)");
-  var y = +window.prompt("Enter the Second Number:");
-  switch (operator) {
-    case "+":
-      window.alert("Result = " + (x + y));
-      break;
-    case "-":
-      window.alert("Result = " + (x - y));
-      break;
-    case "*":
-      window.alert("Result = " + x * y);
-      break;
-    case "/":
-      if (y === 0) {
-        window.alert("Cannot divide by zero!");
-      } else {
-        window.alert("Result = " + x / y);
-      }
-      break;
-    default:
-      window.alert("Invalid operator");
-  }
-}
-Calculator();
+// // 20- Write a program to create Simple Calculator
+// function Calculator() {
+//   var x = +window.prompt("Enter the First Number:");
+//   var operator = window.prompt("Enter operator (+, -, *, /)");
+//   var y = +window.prompt("Enter the Second Number:");
+//   switch (operator) {
+//     case "+":
+//       window.alert("Result = " + (x + y));
+//       break;
+//     case "-":
+//       window.alert("Result = " + (x - y));
+//       break;
+//     case "*":
+//       window.alert("Result = " + x * y);
+//       break;
+//     case "/":
+//       if (y === 0) {
+//         window.alert("Cannot divide by zero!");
+//       } else {
+//         window.alert("Result = " + x / y);
+//       }
+//       break;
+//     default:
+//       window.alert("Invalid operator");
+//   }
+// }
+// Calculator();
